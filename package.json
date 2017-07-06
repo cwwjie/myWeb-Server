@@ -4,12 +4,13 @@
   "description": "后端 Koa2 RESTful API",
   "keywords": [],
   "scripts": {
-    "start": "node server.js"
+    "start": "supervisor server.js"
   },
   "dependencies": {
     "ioredis": "^2.5.0",
     "koa": "^2.0.1",
     "koa-body": "^1.6.0",
+    "koa-cors": "0.0.16",
     "koa-router": "^7.0.1",
     "koa-session2": "^2.1.1",
     "monk": "^4.0.0",
