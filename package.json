@@ -1,26 +1,24 @@
 {
-  "name": "Koa2",
-  "version": "1.0.0",
-  "description": "后端 Koa2 RESTful API",
+  "name": "mywebserver3",
+  "version": "3.0.0",
+  "description": "RESTful API Koa2",
   "keywords": [],
   "scripts": {
-    "start": "SET NODE_ENV=dev && supervisor server.js"
+    "start": "SET NODE_ENV=dev&& nodemon index.js"
   },
   "dependencies": {
-    "ioredis": "^2.5.0",
-    "koa": "^2.0.1",
-    "koa-body": "^1.6.0",
-    "koa-cors": "0.0.16",
-    "koa-router": "^7.0.1",
-    "koa-session2": "^2.1.1",
-    "monk": "^4.0.0",
-    "require-directory": "^2.1.1"
+    "nodemon": "^1.12.1"
   },
-  "devDependencies": {},
-  "main": "server.js",
+  "devDependencies": {
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.11.11"
+  },
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cwwjie/website-FrontEndS3"
+    "url": "https://github.com/cwwjie/myWeb-Server"
   },
   "author": "Rejiejay",
   "license": ""
