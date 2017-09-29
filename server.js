@@ -13,7 +13,7 @@ const app = new Koa2();
 // 	console.log(ctx.request)
 // 	return next()
 // };
-
+// console.log( process.env.NODE_ENV );
 
 // 初始化加载进来解析请求部分
 app.use(KoaBody({
@@ -31,8 +31,8 @@ app.use((ctx, next) => {
 	ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, uniquele, identify')
 	ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS')
 	ctx.set('Access-Control-Allow-Credentials', true) // 允许带上 cookie
-    return next()
-  })
+	return next()
+})
 
 
 // 这里是 RESTful API 核心区、预计会产生大量的代码、代码逻辑要做好分层、

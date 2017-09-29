@@ -4,7 +4,7 @@
   "description": "后端 Koa2 RESTful API",
   "keywords": [],
   "scripts": {
-    "start": "supervisor server.js"
+    "start": "SET NODE_ENV=dev && supervisor server.js"
   },
   "dependencies": {
     "ioredis": "^2.5.0",

@@ -10,6 +10,9 @@ router.get('/',(ctx, next) => {
 // router.get('/',controllers.测试.index)
 /* --------------------------------- Home 首页前端部分 ----------------------------------------- */
 
+// 获取首页轮播图
+router.get('/client/scrollimg',controllers.client.scrollimg);
+
 // 获取 首页 Main 所有数据
 router.get('/Home/getCode',controllers.Home.getCode);
 router.get('/Home/getDesign',controllers.Home.getDesign);
