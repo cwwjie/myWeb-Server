@@ -1,7 +1,7 @@
 const router = require('koa-router')();
-const getAll = require('./getAll');
+const getAllImg = require('./getAllImg');
 
-router.get('/getAll', getAll);
+router.get('/get', getAllImg);
 router.get('/',(ctx, next)=> {
     ctx.body = 'you get /slider route';
 });

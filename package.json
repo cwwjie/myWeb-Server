@@ -7,6 +7,8 @@
     "start": "SET NODE_ENV=dev&& nodemon index.js"
   },
   "dependencies": {
+    "formidable": "^1.1.1",
+    "koa-body": "^2.4.0",
     "nodemon": "^1.12.1"
   },
   "devDependencies": {

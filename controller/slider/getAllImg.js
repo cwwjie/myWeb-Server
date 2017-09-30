@@ -1,8 +1,8 @@
-const Img = require('./model');
+const img = require('./model');
 
 module.exports = async (ctx, next) => {
     let myQurty = new Promise((resolve, reject) => {
-        Img.find({ type: 'imgUrl' }, (error, docs) => {
+        img.find({ type: 'imgUrl' }, (error, docs) => {
             if (error) {
                 reject(error);
             }

@@ -3,7 +3,8 @@ module.exports = (() => {
     if (process.env.NODE_ENV === 'dev') {
         return {
             port: '3000',
-            mongodb: 'mongodb://localhost:27017/'
+            mongodbURL: 'mongodb://localhost:27017/',
+            database: 'test'
         }
     }
 })();

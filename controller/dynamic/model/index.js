@@ -1,15 +1,17 @@
 const path = require('path');
+const mongoose = require('mongoose');
+
 const config = require(path.relative(__dirname, './config/'));
 
-let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 let connection = mongoose.createConnection(config.mongodbURL +　config.database);
 
-let imgSchema = new Schema({
-    type: String,
-    url: String
+let dynamic = new Schema({
+    date: String,
+    title: String,
+    content: String,
+    thoughtsCount: Number,
+    upvote: Number,
 }, { versionKey: false });
 
-let img = connection.model('img', imgSchema);
-
-module.exports = img;
+module.exports = connection.model('dynamic', dynamic);
