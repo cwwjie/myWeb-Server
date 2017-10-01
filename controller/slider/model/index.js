@@ -2,6 +2,8 @@ const path = require('path');
 const config = require(path.relative(__dirname, './config/'));
 
 let mongoose = require('mongoose');
+
+mongoose.Promise = Promise;
 let Schema = mongoose.Schema;
 let connection = mongoose.createConnection(config.mongodbURL +　config.database);
 

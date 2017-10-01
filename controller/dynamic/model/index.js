@@ -3,11 +3,13 @@ const mongoose = require('mongoose');
 
 const config = require(path.relative(__dirname, './config/'));
 
+
+mongoose.Promise = Promise;
 let Schema = mongoose.Schema;
 let connection = mongoose.createConnection(config.mongodbURL +　config.database);
 
 let dynamic = new Schema({
-    date: String,
+    date: Number,
     title: String,
     content: String,
     thoughtsCount: Number,
