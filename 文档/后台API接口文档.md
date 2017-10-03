@@ -17,5 +17,41 @@ param: '?sequence=new' // old
 url: '/dynamic/getdata/sortbyrandom'  
 method: 'GET'  
 
+
+### 删除动态
+url: '/dynamic/delete'  
+method: 'POST'  
+data: {
+	id: '59d2e63af8ec5014ecfa4f1f'
+}
+
+### 编辑动态
+url: '/dynamic/update'  
+method: 'POST'  
+data: {
+	id: '59d2e63af8ec5014ecfa4f1f', (必填)
+    title: String, (非必填)
+    content: String, (必填)
+}
+
+### 点赞加1
+url: '/dynamic/update/upvote'  
+method: 'POST'  
+data: {
+	id: '59d2e63af8ec5014ecfa4f1f'
+}
+
+### 需记 -1/+1
+url: '/dynamic/update/thoughtsCount'  
+method: 'POST'  
+data: {
+	id: '59d2e63af8ec5014ecfa4f1f'
+	isAdd: true (非必填)
+}
+
+
 # 轮播图接口
-/slider
+
+### 获取所有轮播图
+url: '/slider'  
+method: 'POST'  GET

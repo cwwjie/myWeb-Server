@@ -1,7 +1,7 @@
 const img = require('./model');
 
 module.exports = async (ctx, next) => {
-    let myQurty = new Promise((resolve, reject) => {
+    let myQuery = new Promise((resolve, reject) => {
         img.find({ type: 'imgUrl' }, (error, docs) => {
             if (error) {
                 reject(error);
@@ -10,10 +10,10 @@ module.exports = async (ctx, next) => {
         });
     });
     let timeout = new Promise((resolve, reject) => {
-        setTimeout(reject, 10000, "The qurty time is out");
+        setTimeout(reject, 10000, "The query time is out");
     })
 
-    await Promise.race([myQurty, timeout]).then((data) => {
+    await Promise.race([myQuery, timeout]).then((data) => {
         if (data.length === 0) {
             ctx.body = {
                 'result': 0,
