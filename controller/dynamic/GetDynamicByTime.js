@@ -56,18 +56,18 @@ let quickSort = (data, sequence) => {
 		isIncrease = sequence || false; // 是否 升序 (从小到大) (从老到新) (默认不是)
 
 	let swap = (array, indexA, indexB) => {
-		var temp = array[indexA];
+		let temp = array[indexA];
 		array[indexA] = array[indexB];
 		array[indexB] = temp;
 	}
 	
 	let partition = (array, pivot, left, right) => {
-		var storeIndex = left,
+		let storeIndex = left,
 			pivotValue = array[pivot].date;
 	
 		swap(array, pivot, right);
 	 
-		for(var v = left; v < right; v++) {
+		for(let v = left; v < right; v++) {
 	
 			// 升序 从小到大 日期从古老到现代
 			if (isIncrease) {
@@ -90,7 +90,7 @@ let quickSort = (data, sequence) => {
 	}
 	
 	let sort = (array, left, right) => {
-		var pivot = null;
+		let pivot = null;
 	
 		if(typeof left !== 'number') {
 			left = 0;
@@ -102,7 +102,7 @@ let quickSort = (data, sequence) => {
 	
 		if(left < right) {
 			pivot     = left + Math.ceil((right - left) * 0.5);
-			newPivot  = partition(array, pivot, left, right);
+			let newPivot  = partition(array, pivot, left, right);
 
 			sort(array, left, newPivot - 1);
 			sort(array, newPivot + 1, right);
