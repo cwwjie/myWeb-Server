@@ -23,7 +23,18 @@ app.use((ctx, next) => {
 		ctx.set('Access-Control-Allow-Credentials', true) // 允许CORS请求请求带上 cookie
 		ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept') //  上可以携带的header参数
 		ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS')
-    }
+	} else {
+		if (
+			ctx.header.origin === 'http://rejiejay.cn' ||
+			ctx.header.origin === 'http://www.rejiejay.cn' ||
+			ctx.header.origin === 'http://119.29.140.46'
+		) {
+			ctx.set('Access-Control-Allow-Origin', ctx.header.origin)
+			ctx.set('Access-Control-Allow-Credentials', true) // 允许CORS请求请求带上 cookie
+			ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept') //  上可以携带的header参数
+			ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS')
+		}
+	}
 	return next()
 })
 
