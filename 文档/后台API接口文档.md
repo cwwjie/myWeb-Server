@@ -55,3 +55,11 @@ data: {
 ### 获取所有轮播图
 url: '/slider'  
 method: 'POST'  GET
+
+# 用户接口
+
+### 检测cookie是否正确(过期)
+url: '/user/checkLogin'  
+method: 'GET'
+cookie: 'token'
+
