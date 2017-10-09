@@ -1,14 +1,13 @@
 const dynamic = require('./model');
-const user = require('./../user/model');
 const queryCookie = require('./method/queryCookie');
 
 module.exports = async (ctx, next) => {
 	let cookie = ctx.cookies.get('token') || '',
 		postData = ctx.request.body;
-	// {
-	// 	title: '标题', // 非必填
-	// 	content: '内容',
-	// }
+		// {
+		// 	title: '标题', // 非必填
+		// 	content: '内容',
+		// }
 
 	if (ctx.is('application/json') === false) {
 		ctx.body = {

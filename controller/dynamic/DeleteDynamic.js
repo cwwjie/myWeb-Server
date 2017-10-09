@@ -1,7 +1,9 @@
 const dynamic = require('./model');
+const queryCookie = require('./method/queryCookie');
 
 module.exports = async (ctx, next) => {
-	let postData = ctx.request.body;
+	let cookie = ctx.cookies.get('token') || '',
+		postData = ctx.request.body;
 	// {
 	// 	id: '59d2e5dbf8ec5014ecfa4f1e',
 	// }
@@ -20,6 +22,26 @@ module.exports = async (ctx, next) => {
 			'result': 0,
 			'data': null,
 			'message': 'you post data form is mistaken'
+		};
+		return
+	}
+	
+	if (!cookie) {
+		ctx.body = {
+			'result': 0,
+			'data': null,
+			'message': 'you token is null'
+		};
+		return
+	}
+	
+	let checkCookie = await queryCookie(cookie);
+
+	if (checkCookie.success === false) {
+		ctx.body = {
+			'result': 0,
+			'data': null,
+			'message': checkCookie.message
 		};
 		return
 	}

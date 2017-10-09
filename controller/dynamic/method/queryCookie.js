@@ -18,7 +18,7 @@ module.exports = async (token) => {
         new Promise((resolve, reject) => { setTimeout(reject, 10000, "Check The Cookie time is out") })
     ]).then((data) => {
         if (data === null) {
-            message = 'Can not have query this account';
+            message = 'you account Can not query the correct token';
             return
         }
         success = true;

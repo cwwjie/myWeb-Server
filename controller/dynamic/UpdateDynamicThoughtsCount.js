@@ -1,11 +1,13 @@
 const dynamic = require('./model');
+const queryCookie = require('./method/queryCookie');
 
 module.exports = async (ctx, next) => {
-	let postData = ctx.request.body;
-	// {
-	// 	id: '59d2e5dbf8ec5014ecfa4f1e'
-	//  isReduce: true
-	// }
+	let cookie = ctx.cookies.get('token') || '',
+		postData = ctx.request.body;
+		// {
+		// 	id: '59d2e5dbf8ec5014ecfa4f1e'
+		//  isReduce: true
+		// }
 
 	if (ctx.is('application/json') === false) {
 		ctx.body = {
@@ -25,8 +27,29 @@ module.exports = async (ctx, next) => {
 		return
 	}
 
+	if (!cookie) {
+		ctx.body = {
+			'result': 0,
+			'data': null,
+			'message': 'you token is null'
+		};
+		return
+	}
+
+	let checkCookie = await queryCookie(cookie);
+
+	if (checkCookie.success === false) {
+		ctx.body = {
+			'result': 0,
+			'data': null,
+			'message': checkCookie.message
+		};
+		return
+	}
+
 	let myThoughtsCount,
 		isReduce = postData.isReduce || false;
+
 	await findThoughtsCountById(postData.id)
 		.then((data) => {
 			myThoughtsCount = data.thoughtsCount;
