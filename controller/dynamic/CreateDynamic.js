@@ -59,7 +59,7 @@ module.exports = async (ctx, next) => {
 		upvote: 0
 	});
 
-    let mySave = new Promise((resolve, reject) => {
+  let mySave = new Promise((resolve, reject) => {
 		DynamicData.save((error, docs) => {
 			if (error) {
 				reject(error);
@@ -67,7 +67,7 @@ module.exports = async (ctx, next) => {
 				resolve(docs);
 			}
 		});
-    });
+  });
 
 	let timeout = new Promise((resolve, reject) => {
 		setTimeout(reject, 10000, 'Save to the database time is out');

@@ -48,8 +48,8 @@ module.exports = async (ctx, next) => {
 		return
 	}
 
-    let myUpdate = new Promise((resolve, reject) => {
-		dynamic.updateOne({
+  let myUpdate = new Promise((resolve, reject) => {
+		dynamic.findOneAndUpdate({
 			_id: postData.id
 		}, {
 			$set : {
@@ -63,7 +63,7 @@ module.exports = async (ctx, next) => {
 				resolve(docs);
 			}
 		});
-    });
+  });
 
 	let timeout = new Promise((resolve, reject) => {
 		setTimeout(reject, 10000, 'Update to the database time is out');
