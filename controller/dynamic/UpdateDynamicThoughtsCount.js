@@ -6,7 +6,7 @@ module.exports = async (ctx, next) => {
 		postData = ctx.request.body;
 		// {
 		// 	id: '59d2e5dbf8ec5014ecfa4f1e'
-		//  isReduce: true
+		//  isAdd: true
 		// }
 
 	if (ctx.is('application/json') === false) {
@@ -48,7 +48,13 @@ module.exports = async (ctx, next) => {
 	}
 
 	let myThoughtsCount,
-		isReduce = postData.isReduce || false;
+		isAdd;
+
+	if (postData.isAdd || postData.isAdd === undefined) {
+		isAdd = 'add';
+	} else {
+		isAdd = 'reduce';
+	}
 
 	await findThoughtsCountById(postData.id)
 		.then((data) => {
@@ -64,19 +70,20 @@ module.exports = async (ctx, next) => {
 
 	if (myThoughtsCount === false) { return }
 
-	if (isReduce) {
+
+	if (isAdd === 'add') {
+		myThoughtsCount++;
+	} else {
 		if (myThoughtsCount <= 0) {
 			ctx.body = {
 				'result': 0,
 				'data': null,
-				'message': `you thoughtsCount can not reduce`
+				'message': 'you thoughtsCount can not reduce'
 			};
 			return
 		} else {
 			myThoughtsCount--;
 		}
-	} else {
-		myThoughtsCount++;
 	}
 
 	let myUpdate =  new Promise((resolve, reject) => {
