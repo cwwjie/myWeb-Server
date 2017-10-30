@@ -1,6 +1,17 @@
 # Restful API - 第三期 Python版 
 
-### 如何启动?
 
-$ python manage.py runserver 127.0.0.1:8193 (ip:port)
+## windows如何启动虚拟环境?
+
+Win + R
+
+CMD
+
+G:
+
+cd /myproject/myWeb-Server/
+
+python_modules\Scripts\activate
+
+deactivate
 
