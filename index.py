@@ -1,14 +1,18 @@
-import tornado.ioloop
-import tornado.web
+from flask import Flask, request, jsonify
+import json
 
-class MainHandler(tornado.web.RequestHandler):
-    def get(self):
-        self.write("Hello, world")
+app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
 
-application = tornado.web.Application([
-    (r"/", MainHandler),
-])
+@app.route('/json', methods=['GET'])
+def json():
+    return jsonify({
+        'a': 1,
+        'b': 2,
+        'c': [3, 4, 5]
+    })
 
-if __name__ == "__main__":
-    application.listen(8888)
-    tornado.ioloop.IOLoop.instance().start()
+if __name__ == '__main__':
+    app.run()
