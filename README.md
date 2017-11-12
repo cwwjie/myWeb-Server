@@ -7,7 +7,7 @@ Win + R
 
 CMD
 
-G:
+G: 或 g:
 
 cd /myproject/myWeb-Server/
 
@@ -16,4 +16,16 @@ python_modules\Scripts\activate
 deactivate
 
 ## windows如何启动虚拟环境? （at 宿舍）
+
+
+Win + R
+
+CMD
+
+D: 或 d:
+
+cd /My-JavaScript/myWeb-Server/
+
+python_modules\Scripts\activate
+
 
