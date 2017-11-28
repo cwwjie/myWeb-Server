@@ -1,28 +1,25 @@
 const Router = require('koa-router')();
-const slider = require('./../controller/slider');
 const dynamic = require('./../controller/dynamic');
+const carousel = require('./../controller/carousel');
+const todo = require('./../controller/todo');
 const user = require('./../controller/user');
 
-const NODE_ENV = process.env.NODE_ENV || '';
-
 module.exports = function(app) {
-	if (NODE_ENV === 'dev') {
-		Router.use('/dynamic',dynamic.routes());
-		Router.use('/slider',slider.routes());
-		Router.use('/user',user.routes());
-		Router.get('/', (ctx,next)=> {
-			ctx.body = 'you get / route';
-		});
-		app.use(Router.routes());
-	} else {
-		Router.use('/server/dynamic',dynamic.routes());
-		Router.use('/server/slider',slider.routes());
-		Router.use('/server/user',user.routes());
-		Router.get('/server', (ctx,next)=> {
-			ctx.body = 'you get / route';
-		});
-		app.use(Router.routes());
+	let NODE_ENV = process.env.NODE_ENV || '',
+			baseUrl;
 
+	if (NODE_ENV === 'dev') {
+		baseUrl = '/';
+	} else {
+		baseUrl = '/server/';
 	}
 
+	Router.use(`${baseUrl}dynamic`, dynamic.routes());
+	Router.use(`${baseUrl}carousel`, carousel.routes());
+	Router.use(`${baseUrl}todo`, todo.routes());
+	Router.use(`${baseUrl}user`, user.routes());
+	Router.get(`${baseUrl}`, (ctx, next)=> {
+		ctx.body = 'you get / route';
+	});
+	app.use(Router.routes());
 }

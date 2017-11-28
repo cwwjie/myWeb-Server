@@ -10,7 +10,9 @@
   "dependencies": {
     "formidable": "^1.1.1",
     "koa-body": "^2.4.0",
-    "nodemon": "^1.12.1"
+    "mysql2": "^1.5.1",
+    "nodemon": "^1.12.1",
+    "sequelize": "^4.23.1"
   },
   "devDependencies": {
     "koa": "^2.3.0",
