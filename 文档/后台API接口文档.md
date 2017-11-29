@@ -1,4 +1,4 @@
-# 发表动态接口
+# 发表动态接口(mongodb)
 
 ### 创建动态
 url: '/dynamic'   
@@ -50,7 +50,7 @@ data: {
 }  
 
 
-# 轮播图接口
+# 轮播图接口(mongodb)
 
 ### 获取所有轮播图
 url: '/slider'  
@@ -71,3 +71,17 @@ url: '/user/checkLogin'
 method: 'GET'   
 cookie: 'token'   
 
+# 待办事项接口(mysql)
+
+### 根据时间获取代办项
+url: '/todo/getAllByTime'    
+method: 'GET'   
+
+### 创建代办项
+url: '/todo/createItem'    
+method: 'GET'   
+data: {  
+	description: '任务描述',  
+	category: '任务分类 (非必填)',    
+	priority: 0, (优先程度 非必填)   
+}  

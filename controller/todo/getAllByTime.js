@@ -1,19 +1,21 @@
 const router = require('koa-router')();
 const Todo = require('./model');
+const request = require('./method/request');
 const sequelize = require('sequelize');
 
 module.exports = async (ctx, next) => {
-    let mytodo = await Todo.findAll({
+    ctx.body = await Todo.findAll({
         'where': {
             'isComplete': 0
         },
         'order': sequelize.col('createTime')
-    }).then(project => {
-        console.log(project)
-        if (project !== null) {
-            return project
-        }
-        return '没有查询到任何东西噢'
-    }, error => ('error'));
-    ctx.body = mytodo;
+    }).then(
+        project => {
+            if (project !== null) {
+                return request.success(project)
+            }
+            return request.error('Database query success, But database is empty', 2)
+        },
+        error => request.error(`Database query error, The reason is ${error}`)
+    );
 };
