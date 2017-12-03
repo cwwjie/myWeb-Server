@@ -1,6 +1,6 @@
 const router = require('koa-router')();
 const request = require('./method/request');
-const Todo = require('./model');
+const model = require('./model');
 
 module.exports = async (ctx, next) => {
 	let cookie = ctx.cookies.get('token') || '',
@@ -13,7 +13,7 @@ module.exports = async (ctx, next) => {
 		return ctx.body = request.error('The Data Format is mistaken')
     }
 
-    ctx.body = await Todo.create({
+    ctx.body = await model.Todo.create({
         'description': postData.description,
         'category': postData.category || '无分类',
         'priority': postData.priority || 0,

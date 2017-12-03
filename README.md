@@ -79,6 +79,10 @@ cookie: 'token'
 url: '/todo/getAllByTime'    
 method: 'GET'   
 
+### 获取所有代办项类别
+url: '/todo/getAllCategory'    
+method: 'GET'   
+
 ### 创建代办项
 url: '/todo/createItem'    
 method: 'GET'   

@@ -9,7 +9,6 @@ const sequelize = new Sequelize(
   config.mysqlPassword,
   config.mysqlSequelize
 );
-
 const Todo = sequelize.define('todo', {
   'id': {
     'type': Sequelize.INTEGER,
@@ -43,6 +42,20 @@ const Todo = sequelize.define('todo', {
     'defaultValue': Date.parse(new Date())
   },
 });
+module.exports.sequelize = sequelize;
+module.exports.Todo = Todo;
+
+// CREATE TABLE IF NOT EXISTS `todos` (
+//   `id` INTEGER NOT NULL auto_increment UNIQUE , 
+//   `description` VARCHAR(50) NOT NULL, 
+//   `isComplete` INTEGER NOT NULL DEFAULT 0, 
+//   `category` VARCHAR(10) NOT NULL DEFAULT '未分类', 
+//   `priority` INTEGER NOT NULL DEFAULT 0, 
+//   `createTime` BIGINT NOT NULL DEFAULT 1512042227000, 
+//   `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, 
+//   UNIQUE `todos_id_unique` (`id`), 
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 // Todo.sync({force: true}).then(() => {
 //   // 表已创建
@@ -57,10 +70,9 @@ const Todo = sequelize.define('todo', {
 // });
 
 // Todo.create({
-//   description: '任务7',
+//   description: '任务',
 //   category: '无分类',
 //   priority: 1,
 //   isComplete: 0,
 //   createTime: Date.parse(new Date()),
 // });
-module.exports = Todo;

@@ -3,15 +3,10 @@ const request = require('./method/request');
 const sequelize = require('sequelize');
 
 module.exports = async (ctx, next) => {
-    ctx.body = await model.Todo.findAll({
-        'where': {
-            'isComplete': 0
-        },
-        'order': sequelize.col('createTime')
-    }).then(
+    ctx.body = await model.sequelize.query('select * from todos where createTime in (select max(createTime) from todos group by category) order by createTime DESC;').then(
         project => {
-            if (project !== null) {
-                return request.success(project)
+            if (project[0].length !== 0) {
+                return request.success(project[0])
             }
             return request.error('Database query success, But database is empty', 2)
         },
