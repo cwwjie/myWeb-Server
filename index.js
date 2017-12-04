@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const koaBody = require('koa-body');
 
-const router = require('./router');
+const controller = require('./controller');
 const config = require('./config');
 
 const app = new Koa();
@@ -39,7 +39,7 @@ app.use((ctx, next) => {
 	return next()
 })
 
-router(app);
+controller(app);
 
 app.use((ctx, next)=>{
 	switch (ctx.status) {

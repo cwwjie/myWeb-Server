@@ -1,9 +1,9 @@
 const Router = require('koa-router')();
-const dynamic = require('./../controller/dynamic');
-const carousel = require('./../controller/carousel');
-const todo = require('./../controller/todo');
-const user = require('./../controller/user');
-const weixin = require('./../controller/weixin');
+const dynamic = require('./dynamic');
+const carousel = require('./carousel');
+const todo = require('./todo');
+const user = require('./user');
+const weixin = require('./weixin');
 
 module.exports = function(app) {
 	let NODE_ENV = process.env.NODE_ENV || '',

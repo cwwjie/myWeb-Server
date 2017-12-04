@@ -1,8 +1,8 @@
-const img = require('./model');
+const carousel = require('./model');
 
 module.exports = async (ctx, next) => {
     let myQuery = new Promise((resolve, reject) => {
-        img.find({ type: 'imgUrl' }, (error, docs) => {
+        carousel.find({ type: 'imgUrl' }, (error, docs) => {
             if (error) {
                 reject(error);
             }
