@@ -1,5 +1,5 @@
-const router = require('koa-router')();
-const request = require('./method/request');
+const path = require('path');
+const request = require(path.relative(__dirname, './method/request'));
 const model = require('./model');
 
 module.exports = async (ctx, next) => {

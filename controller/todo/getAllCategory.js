@@ -1,5 +1,6 @@
+const path = require('path');
+const request = require(path.relative(__dirname, './method/request'));
 const model = require('./model');
-const request = require('./method/request');
 const sequelize = require('sequelize');
 
 module.exports = async (ctx, next) => {
