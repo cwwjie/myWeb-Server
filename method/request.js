@@ -1,13 +1,13 @@
 module.exports = {
-    success: (data) => ({
+    success: (data, message) => ({
         'result': 1,
         'data': data || null,
-        'message': 'Request to Database success'
+        'message': message || 'Request to Database success'
     }),
-    
-    error: (message, result) => ({
+
+    error: (message, result, data) => ({
         'result': result || 0,
-        'data': null,
+        'data': data || null,
         'message': message
     })
 }

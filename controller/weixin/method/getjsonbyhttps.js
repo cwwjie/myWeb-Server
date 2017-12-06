@@ -1,7 +1,7 @@
-const http = require('http');
+const https = require('https');
 
 module.exports = (url) => new Promise((resolve, reject) => {
-  http.get(url, (res) => {
+  https.get(url, (res) => {
     const { statusCode } = res;
     const contentType = res.headers['content-type'];
 

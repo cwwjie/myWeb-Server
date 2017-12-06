@@ -1,3 +1,5 @@
+const path = require('path');
+const CreateNonce = require(path.relative(__dirname, './method/CreateNonce'));
 const user = require('./model');
 
 module.exports = async (ctx, next) => {
@@ -17,7 +19,7 @@ module.exports = async (ctx, next) => {
 		return
 	}
     
-    let newToken = createRandomNum();
+    let newToken = CreateNonce();
 
     let myQuery = new Promise((resolve, reject) => {
         user.findOneAndUpdate({
@@ -76,9 +78,4 @@ const inspect = (data) => {
 	} else {
 		return false
 	}
-}
-
-const createRandomNum = () => {
-	const chars = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-	return chars.map(() => (chars[Math.ceil(Math.random() * 61)])).join('');
 }

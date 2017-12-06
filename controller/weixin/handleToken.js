@@ -1,5 +1,6 @@
 const encryption = require('./method/encryption');
 
+// 正确响应微信发送的Token验证
 module.exports = async (ctx, next) => {
   // 验证请求格式是否正确
 	if (inspect(ctx.query) === false) {

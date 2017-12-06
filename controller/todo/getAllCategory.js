@@ -7,7 +7,7 @@ module.exports = async (ctx, next) => {
     ctx.body = await model.sequelize.query('select * from todos where createTime in (select max(createTime) from todos group by category) order by createTime DESC;').then(
         project => {
             if (project[0].length !== 0) {
-                return request.success(project[0])
+                return request.success(project[0], 'Database query success')
             }
             return request.error('Database query success, But database is empty', 2)
         },

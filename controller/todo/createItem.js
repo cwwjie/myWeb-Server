@@ -20,7 +20,7 @@ module.exports = async (ctx, next) => {
         'isComplete': 0,
         'createTime': Date.parse(new Date()),
     }).then(
-        data => request.success(),
+        data => request.success(null, 'Request to Database success'),
         error => request.error(`Save to Database error, The reason code is: ${error}`)
     );
 };

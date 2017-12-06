@@ -12,7 +12,7 @@ module.exports = async (ctx, next) => {
     }).then(
         project => {
             if (project !== null) {
-                return request.success(project)
+                return request.success(project, 'Database query success')
             }
             return request.error('Database query success, But database is empty', 2)
         },
