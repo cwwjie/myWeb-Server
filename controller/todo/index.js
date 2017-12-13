@@ -1,8 +1,11 @@
 const router = require('koa-router')();
+
+const editItem = require('./editItem');
 const createItem = require('./createItem');
 const getAllByTime = require('./getAllByTime');
 const getAllCategory = require('./getAllCategory');
 
+router.post('/editItem', editItem);
 router.post('/createItem', createItem);
 router.get('/getAllByTime', getAllByTime);
 router.get('/getAllCategory', getAllCategory);

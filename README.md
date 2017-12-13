@@ -85,11 +85,22 @@ method: 'GET'
 
 ### 创建代办项
 url: '/todo/createItem'    
-method: 'GET'   
+method: 'POST'   
 data: {  
 	description: '任务描述',  
 	category: '任务分类 (非必填)',    
 	priority: 0, (优先程度 非必填)   
+}  
+
+### 修改代办项
+url: '/todo/editItem'    
+method: 'POST'   
+data: {  
+	id: '(必填)',  
+	isComplete: '0/1, (非必填)',  
+	description: '任务描述 (非必填)',  
+	category: '任务分类 (非必填)',    
+	priority: 0 1 2 3 4, (优先程度 非必填)   
 }  
 
 
