@@ -1,6 +1,6 @@
 const path = require('path');
 const request = require(path.relative(__dirname, './method/request'));
-const getjsonby = require('./getjsonbyhttps');
+const getjsonby = require(path.relative(__dirname, './method/getjsonbyhttps'));
 const WeChat = require('./../model/WeChat');
 
 /**

@@ -2,7 +2,7 @@ const path = require('path');
 const request = require(path.relative(__dirname, './method/request'));
 const AccessToken = require('./method/Access_token');
 const WeChat = require('./model/WeChat');
-const getjsonby = require('./method/getjsonbyhttps');
+const getjsonby = require(path.relative(__dirname, './method/getjsonbyhttps'));
 
 /**
  * 获取 jsapi_ticket 接口 /ticket
