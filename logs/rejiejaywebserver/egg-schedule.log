@@ -1,0 +1,2 @@
+2018-03-09 23:05:30,312 INFO 11988 [Timer] D:\My-JavaScript\myWeb-Server\node_modules\._egg-logrotator@3.0.2@egg-logrotator\app\schedule\clean_log.js next time will execute at 2018-03-10 00:00:00.000
+2018-03-09 23:05:30,313 INFO 11988 [Timer] D:\My-JavaScript\myWeb-Server\node_modules\._egg-logrotator@3.0.2@egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2018-03-10 00:00:01.000

@@ -1,0 +1,265 @@
+{
+  "keys": "D:\\My-JavaScript\\myWeb-Server\\config\\config.default.js",
+  "middleware": "D:\\My-JavaScript\\myWeb-Server\\config\\config.default.js",
+  "session": {
+    "maxAge": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "key": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "encrypt": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-session@3.1.0@egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "useSession": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "cookieName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "sessionName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "headerName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "bodyName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "queryName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "value": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.local.js",
+      "maxAge": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "value": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js",
+      "policy": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-security@2.0.0@egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-onerror@2.0.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-onerror@2.0.0@egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-i18n@2.0.0@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-i18n@2.0.0@egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-watcher@3.0.0@egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-watcher@3.0.0@egg-watcher\\config\\config.default.js",
+      "development": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-watcher@3.0.0@egg-watcher\\config\\config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fields": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "files": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-multipart@2.0.0@egg-multipart\\config\\config.default.js"
+  },
+  "development": {
+    "watchDirs": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-development@2.2.0@egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-development@2.2.0@egg-development\\config\\config.default.js",
+    "fastReady": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-development@2.2.0@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-development@2.2.0@egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-development@2.2.0@egg-development\\config\\config.default.js"
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-schedule@3.3.0@egg-schedule\\config\\config.default.js",
+      "file": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-schedule@3.3.0@egg-schedule\\config\\config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-logrotator@3.0.2@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-logrotator@3.0.2@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-logrotator@3.0.2@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-logrotator@3.0.2@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-logrotator@3.0.2@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-logrotator@3.0.2@egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-logrotator@3.0.2@egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "dir": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "dynamic": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "preload": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "buffer": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-static@2.1.0@egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-static@2.1.0@egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-view@2.1.0@egg-view\\config\\config.default.js",
+    "cache": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-view@2.1.0@egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-view@2.1.0@egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-view@2.1.0@egg-view\\config\\config.default.js",
+    "mapping": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg-view@2.1.0@egg-view\\config\\config.default.js"
+  },
+  "env": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "name": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "proxy": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "ipHeaders": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "hostHeaders": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "version": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "description": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "private": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "keywords": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "engines": {
+      "node": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "stop": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "dev": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "debug": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "test": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "test-local": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "cov": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "lint": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "ci": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "autod": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "egg": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "egg-scripts": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "autod-egg": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "egg-bin": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "egg-ci": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "egg-mock": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "eslint": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "webstorm-disable-index": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "url": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "author": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "license": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "main": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  },
+  "baseDir": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "HOME": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "rundir": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "notFound": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "sitefile": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "middlewares": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "httpClient": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "encoding": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "formLimit": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "jsonLimit": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "strict": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "depth": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "parameterLimit": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    }
+  },
+  "logger": {
+    "dir": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "encoding": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "env": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "level": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "consoleLevel": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "outputJSON": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "buffer": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "appLogName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "coreLogName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "agentLogName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "errorLogName": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "dnsCacheMaxAge": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "maxSockets": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "maxSockets": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+    "logging": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "port": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js",
+      "hostname": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "responseTimeout": "D:\\My-JavaScript\\myWeb-Server\\node_modules\\._egg@2.4.1@egg\\config\\config.default.js"
+  }
+}

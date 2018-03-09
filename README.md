@@ -1,106 +1,39 @@
-# Restful API - 第三版
+# Restful API - 第四版 Egg
 
-# 发表动态接口(mongodb)
+Rejiejay web server
 
-### 创建动态
-url: '/dynamic'   
-method: 'POST'   
-data: {  
-    title: String, (非必填)  
-    content: String, (必填)  
-}  
+## 快速入门
 
-### 根据时间获取动态
-url: '/dynamic/getdata/sortbytime'   
-method: 'GET'   
-param: '?sequence=new' // old   
+<!-- 在此次添加使用文档 -->
 
-### 乱序获取动态 
-url: '/dynamic/getdata/sortbyrandom'  
-method: 'GET'   
+如需进一步了解，参见 [egg 文档][egg]。
 
+### 本地开发
 
-### 删除动态
-url: '/dynamic/delete'  
-method: 'POST'    
-data: {  
-	id: '59d2e63af8ec5014ecfa4f1f'  
-}  
+```bash
+$ npm i
+$ npm run dev
+$ open http://localhost:7001/
+```
 
-### 编辑动态
-url: '/dynamic/update'  
-method: 'POST'   
-data: {  
-	id: '59d2e63af8ec5014ecfa4f1f', (必填)  
-    title: String, (非必填)  
-    content: String, (必填)  
-}  
+### 部署
 
-### 点赞加1
-url: '/dynamic/update/upvote'   
-method: 'POST'   
-data: {   
-	id: '59d2e63af8ec5014ecfa4f1f'  
-}  
+```bash
+$ npm start
+$ npm stop
+```
 
-### 需记 -1/+1
-url: '/dynamic/update/thoughtsCount'  
-method: 'POST'  
-data: {  
-	id: '59d2e63af8ec5014ecfa4f1f'  
-	isAdd: true (非必填)  
-}  
+### 单元测试
+
+- [egg-bin] 内置了 [mocha], [thunk-mocha], [power-assert], [istanbul] 等框架，让你可以专注于写单元测试，无需理会配套工具。
+- 断言库非常推荐使用 [power-assert]。
+- 具体参见 [egg 文档 - 单元测试](https://eggjs.org/zh-cn/core/unittest)。
+
+### 内置指令
+
+- 使用 `npm run lint` 来做代码风格检查。
+- 使用 `npm test` 来执行单元测试。
+- 使用 `npm run autod` 来自动检测依赖更新，详细参见 [autod](https://www.npmjs.com/package/autod) 。
 
 
-# 轮播图接口(mongodb)
-
-### 获取所有轮播图
-url: '/slider'  
-method: 'POST'  GET  
-
-# 用户接口
-
-### 用户登录
-url: '/user/login'  
-method: 'POST'  
-data: {  
-	account: 'account'  
-	password: 'password'  
-}  
-
-### 检测cookie是否正确(过期)
-url: '/user/checkLogin'    
-method: 'GET'   
-cookie: 'token'   
-
-# 待办事项接口(mysql)
-
-### 根据时间获取代办项
-url: '/todo/getAllByTime'    
-method: 'GET'   
-
-### 获取所有代办项类别
-url: '/todo/getAllCategory'    
-method: 'GET'   
-
-### 创建代办项
-url: '/todo/createItem'    
-method: 'POST'   
-data: {  
-	description: '任务描述',  
-	category: '任务分类 (非必填)',    
-	priority: 0, (优先程度 非必填)   
-}  
-
-### 修改代办项
-url: '/todo/editItem'    
-method: 'POST'   
-data: {  
-	id: '(必填)',  
-	isComplete: '0/1, (非必填)',  
-	description: '任务描述 (非必填)',  
-	category: '任务分类 (非必填)',    
-	priority: 0 1 2 3 4, (优先程度 非必填)   
-}  
-
-
+[egg]: https://eggjs.org
